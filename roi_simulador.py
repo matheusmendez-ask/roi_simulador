@@ -14,12 +14,16 @@ logo_path = "logo_branco.png"
 
 st.set_page_config(page_title='Simulador de ROI', page_icon='💰', layout='centered')
 
-# CSS personalizado
 st.markdown(f"""
    <style>
         /* Inputs de texto com bordas arredondadas */
         .stTextInput>div>div>input {{
             border-radius: 20px;
+        }}
+
+        /* Ocultar o ícone de "olho" no campo de senha */
+        input[type="password"] + div button {{
+            display: none;
         }}
 
         /* Botões com estilo personalizado */
@@ -49,18 +53,17 @@ st.markdown(f"""
             color: #FF4B4B; /* Vermelho */
         }}
 
-        /* Feedback de sucesso com cor de fundo personalizada */
+        /* Feedback de sucesso com cor de fundo personalizado */
         .st-success {{
             background-color: #D4EDDA;
         }}
 
-        /* Feedback de informação com cor de fundo personalizada */
+        /* Feedback de informação com cor de fundo personalizado */
         .st-info {{
             background-color: #D1ECF1;
         }}
         [title="Show password text"] {{
         display: none;
-        
         }}
     </style>
     """, unsafe_allow_html=True)
