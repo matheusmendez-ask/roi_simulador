@@ -58,6 +58,10 @@ st.markdown(f"""
         .st-info {{
             background-color: #D1ECF1;
         }}
+        [title="Show password text"] {{
+        display: none;
+        
+        }}
     </style>
     """, unsafe_allow_html=True)
 
