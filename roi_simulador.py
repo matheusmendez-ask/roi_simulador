@@ -14,36 +14,12 @@ logo_path = "logo_branco.png"
 
 st.set_page_config(page_title='Simulador de ROI', page_icon='💰', layout='centered')
 
-# Definindo a URL da imagem de fundo baseada no estado de autenticação
-url_fundo = "https://fisiodermato.com.br/e-mail/BI-Matheus/Simulador%20BCMED.jpg" if not st.session_state['autenticado'] else "https://fisiodermato.com.br/e-mail/BI-Matheus/Simulador%20BCMED_1.jpg"
-
 # CSS personalizado com imagem de fundo condicional
 st.markdown(f"""
    <style>
         /* Inputs de texto com bordas arredondadas */
         .stTextInput>div>div>input {{
             border-radius: 20px;
-        }}
-            
-        /* Cor do texto para tabelas */
-        .stTable {{
-            color: white; /* Muda a cor do texto para branco */
-        }}
-        
-        /* Alternativamente, se .stTable não funcionar, tente usar estes */
-        table {{
-            color: white; /* Aplica a cor branca ao texto da tabela */
-        }}
-        
-        /* Isso muda a cor do texto das células e cabeçalhos da tabela para branco */
-        .dataframe th, 
-        .dataframe td {{
-            color: white; /* Cor do texto das células */
-        }}
-        
-        /* Cor do texto para cabeçalhos da tabela */
-        .dataframe thead th {{
-            color: white; /* Cor do texto do cabeçalho */
         }}
 
         /* Botões com estilo personalizado */
@@ -82,24 +58,6 @@ st.markdown(f"""
         .st-info {{
             background-color: #D1ECF1;
         }}
-        
-
-        /* Imagem de fundo do aplicativo */
-        .stApp {{
-            background-image: url('{url_fundo}');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }}
-
-        /* Aqui vão as regras adicionadas para H1, H2, H3 */
-        h1, h2, h3 {{
-            color: white; /* Isso muda a cor do texto para branco */
-        }}
-
-        [title="Show password text"] {{
-        display: none;
-    }}
     </style>
     """, unsafe_allow_html=True)
 
