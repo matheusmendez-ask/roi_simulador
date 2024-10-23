@@ -22,11 +22,6 @@ st.markdown(f"""
             border-radius: 20px;
         }}
 
-        /* Ocultar o ícone de "olho" no campo de senha */
-        .stPasswordInput > div > div > button {{
-            display: none;
-        }}
-
         /* Botões com estilo personalizado */
         .stButton>button {{
             border-radius: 20px;
@@ -54,12 +49,12 @@ st.markdown(f"""
             color: #FF4B4B; /* Vermelho */
         }}
 
-        /* Feedback de sucesso com cor de fundo personalizado */
+        /* Feedback de sucesso com cor de fundo personalizada */
         .st-success {{
             background-color: #D4EDDA;
         }}
 
-        /* Feedback de informação com cor de fundo personalizado */
+        /* Feedback de informação com cor de fundo personalizada */
         .st-info {{
             background-color: #D1ECF1;
         }}
