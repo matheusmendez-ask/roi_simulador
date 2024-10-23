@@ -83,7 +83,7 @@ def verificar_login():
             st.session_state['usuario_atual'] = usuario
             st.sidebar.success('Você está logado!')
             # Recarrega a página para aplicar o novo estilo de fundo
-            st.experimental_rerun()  # Correção aqui
+            st.rerun()  # Correção aqui
         else:
             st.session_state['autenticado'] = False
             st.sidebar.error('Usuário ou senha inválidos.')
