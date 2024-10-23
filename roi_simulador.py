@@ -74,7 +74,6 @@ usuarios = {
     'Julio': 'xM75RF2p'
 }
 
-# Função de verificação de login
 def verificar_login():
     usuario = st.sidebar.text_input('Usuário', key='usuario_input')
     senha = st.sidebar.text_input('Senha', type='password', key='senha_input')
@@ -84,16 +83,18 @@ def verificar_login():
             st.session_state['usuario_atual'] = usuario
             st.sidebar.success('Você está logado!')
             # Recarrega a página para aplicar o novo estilo de fundo
-            st.experimental_rerun()
+            st.experimental_rerun()  # Correção aqui
         else:
             st.session_state['autenticado'] = False
             st.sidebar.error('Usuário ou senha inválidos.')
             st.sidebar.warning('Por favor, realize o login para acessar a calculadora.')
+
 # Função de logout
 def realizar_logout():
     if st.sidebar.button('Logout'):
         st.session_state['autenticado'] = False
         del st.session_state['usuario_atual']
+
 # Inicialização do estado da sessão para autenticação, se necessário
 if 'autenticado' not in st.session_state:
     st.session_state['autenticado'] = False
