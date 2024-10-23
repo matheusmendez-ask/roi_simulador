@@ -71,14 +71,35 @@ st.markdown(f"""
 # Definição dos usuários e senhas
 usuarios = {
     'Matheus': 'senhaMatheus',
-    'Augusto': '!7uP32lm',
+    'Robson': '!7uP32lm',
     'Eduardo': ')rHaI024',
-    'Ivonete': 'Ff014>1P',
+    'Lidy': 'Ff014>1P',
     'Alvaro': '67{8Nk6l',
     'Dani': 'g16Bm!2o',
     'Cristiane': '2SP1l7C5',
     'Well': '6u6#1E}t',
-    'Julio': 'xM75RF2p'
+    'Julio': 'xM75RF2p',
+    'Dennys': 'senhaDennys',
+   'Fernando': 'senhaFernano',
+   'Raissa': 'senhaRaissa',
+   'Ju': 'senhaJu',
+   'Walfrido': 'senhaWalfrido',
+   'Karol Costa': 'senhaKarol',
+   'Paulo': 'senhaPaulo',
+   'Douglas': 'senhaDouglas',
+   'Luana': 'senhaLuana',
+   'Levi': 'senhaLevi',
+   'Naiane': 'senhaNaiane',
+   'Omar': 'senhaOmar',
+   'Erick': 'senhaErick',
+   'Hudson': 'senhaHudson',
+   'Felipe': 'senhaFelipe',
+   'Kenya': 'senhaKenya',
+   'Elton': 'senhaElton',
+   'Pamela': 'senhaPamela',
+   'Taiandra': 'senhaTaiandra',
+   'Earle': 'senhaEarle',
+   'Thawan': 'senhaThawan',
 }
 
 def verificar_login():
