@@ -14,6 +14,7 @@ logo_path = "logo_branco.png"
 
 st.set_page_config(page_title='Simulador de ROI', page_icon='💰', layout='centered')
 
+# CSS personalizado
 st.markdown(f"""
    <style>
         /* Inputs de texto com bordas arredondadas */
