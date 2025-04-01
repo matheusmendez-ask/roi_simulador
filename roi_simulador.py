@@ -78,7 +78,6 @@ usuarios = {
     'Dani': 'g16Bm!2o',
     'Cristiane': '2SP1l7C5',
     'Well': '6u6#1E}t',
-    'Julio': 'xM75RF2p',
     'Dennys': 'senhaDennys',
    'Fernando': 'senhaFernano',
    'Raissa': 'senhaRaissa',
